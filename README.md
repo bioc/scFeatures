@@ -22,12 +22,15 @@ library(devtools)
 devtools::install_github("SydneyBioX/scFeatures")
  ```
 
+<<<<<<< HEAD
 The following dependency is needed for running the cell-cell communication feature type. 
 
  ```
 devtools::install_github("immunogenomics/presto")
 devtools::install_github("jinworks/CellChat")
  ```
+=======
+>>>>>>> 2383587 (Merge GitHub devel into Bioconductor devel)
 
 ## Quick start 
 
