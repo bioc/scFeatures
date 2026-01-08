@@ -1,7 +1,7 @@
 Package: scFeatures
 Title: scFeatures: Multi-view representations of single-cell and spatial data
        for disease outcome prediction
-Version: 1.10.8
+Version: 1.11.1
 Authors@R: 
     c(
     person(given = "Yue",family = "Cao", email = "yue.cao@sydney.edu.au",  role=c("aut", "cre")),
@@ -44,10 +44,6 @@ Imports:
     methods,
     stats,
     cli,
-<<<<<<< HEAD
-=======
-    CellChat,
->>>>>>> 2383587 (Merge GitHub devel into Bioconductor devel)
     MatrixGenerics,
     Seurat,
     DT
@@ -59,22 +55,8 @@ Suggests:
     BiocStyle,
     ClassifyR,
     org.Hs.eg.db,
-<<<<<<< HEAD
     clusterProfiler,
-    pheatmap,
-    limma,
-    ggplot2,
-    plotly,
-    igraph,
-    data.table,
-    enrichplot,
-    DOSE,
-    rmarkdown
-=======
-    clusterProfiler
-Remotes:
-    jinworks/CellChat
->>>>>>> 2383587 (Merge GitHub devel into Bioconductor devel)
+    CellChat
 VignetteBuilder: knitr
 URL: https://sydneybiox.github.io/scFeatures/ https://github.com/SydneyBioX/scFeatures/
 BugReports: https://github.com/SydneyBioX/scFeatures/issues
