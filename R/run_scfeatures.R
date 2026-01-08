@@ -713,10 +713,6 @@ run_pathway_prop <- function(data, geneset = NULL,
 #' }
 #' @import dplyr
 #' @import DelayedArray
-<<<<<<< HEAD
-#' @import SingleCellSignalR
-=======
->>>>>>> aa0f2c8 (Make CellChat optional)
 #' 
 #' @export
 run_CCI <- function( data, type = "scrna" , ncores = 1  ){

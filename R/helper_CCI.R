@@ -17,35 +17,6 @@ helper_CCI <- function( alldata , ncores = 1  ){
  
   capture.output( suppressMessages( individual_cci <- BiocParallel::bplapply(  unique(alldata$sample), function(x){
     
-<<<<<<< HEAD
-                        data_dataframe  <- alldata$data[, alldata$sample == x, drop=F]
-                        
-                        celltype <- as.factor( alldata$celltype[ alldata$sample == x])
-                        celltype_numeric <- as.numeric(  celltype)
-                        
-                        signal <-  SingleCellSignalR::cell_signaling(data = data_dataframe,
-                                                                     genes = rownames(data_dataframe), 
-                                                                    cluster =   celltype_numeric,
-                                                                    c.names = levels(celltype), write = FALSE)
-                        
-                        if ( length(signal) == 0 ){
-                           all_interaction <- data.frame(LRscore = 0, feature = "placeholder" )
-                        }else{
-                          # concat interaction from each cell type
-                          all_interaction <- NULL
-                          for ( i in 1:length(signal)){
-                            this_celltype <- signal[[i]]
-                            this_celltype$feature <- paste0( colnames( this_celltype )[1] , "->" , colnames( this_celltype )[2],
-                                                             "--", 
-                                                             this_celltype[, 1]  , "->", this_celltype[, 2])
-                            this_celltype <-   this_celltype[, c("LRscore", "feature")]
-                            all_interaction <- rbind( all_interaction,    this_celltype )
-                          }
-                        }
-                       
-                        all_interaction
-               }, BPPARAM = BPparam) ) )
-=======
     err <- try({
               this_sample_data <- alldata$data[, alldata$sample == x]
               colnames(  this_sample_data) <- make.unique( colnames(   this_sample_data) ) 
@@ -129,7 +100,6 @@ helper_CCI <- function( alldata , ncores = 1  ){
   
   
   
->>>>>>> aa0f2c8 (Make CellChat optional)
    
    
    # gather the cell - cell interaction probability into sample x interaction probability matrix 

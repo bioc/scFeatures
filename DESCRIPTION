@@ -1,11 +1,7 @@
 Package: scFeatures
 Title: scFeatures: Multi-view representations of single-cell and spatial data
        for disease outcome prediction
-<<<<<<< HEAD
-Version: 1.10.0
-=======
 Version: 1.11.1
->>>>>>> aa0f2c8 (Make CellChat optional)
 Authors@R: 
     c(
     person(given = "Yue",family = "Cao", email = "yue.cao@sydney.edu.au",  role=c("aut", "cre")),
@@ -48,10 +44,6 @@ Imports:
     methods,
     stats,
     cli,
-<<<<<<< HEAD
-    SingleCellSignalR,
-=======
->>>>>>> aa0f2c8 (Make CellChat optional)
     MatrixGenerics,
     Seurat,
     DT
@@ -63,12 +55,8 @@ Suggests:
     BiocStyle,
     ClassifyR,
     org.Hs.eg.db,
-<<<<<<< HEAD
-    clusterProfiler
-=======
     clusterProfiler,
     CellChat
->>>>>>> aa0f2c8 (Make CellChat optional)
 VignetteBuilder: knitr
 URL: https://sydneybiox.github.io/scFeatures/ https://github.com/SydneyBioX/scFeatures/
 BugReports: https://github.com/SydneyBioX/scFeatures/issues
