@@ -21,10 +21,6 @@ The latest scFeatures can be installed using devtools:
 library(devtools)
 devtools::install_github("SydneyBioX/scFeatures")
  ```
-<<<<<<< HEAD
- 
-##  Vignettes
-=======
 
 The following dependency is needed for running the cell-cell communication feature type. 
 
@@ -101,7 +97,6 @@ scfeatures_result <- scFeatures(data = data@assays$RNA@data,
 ```
 
 ##  Detailed vignette
->>>>>>> 79816da (add cellchat dependency to readme)
 
 Please see https://sydneybiox.github.io/scFeatures/articles/scFeatures_overview.html.     
   
