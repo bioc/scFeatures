@@ -61,7 +61,7 @@ Suggests:
     ggplot2,
     plotly,
     igraph,
-    data.table
+    data.table,
     enrichplot,
     DOSE,
     rmarkdown
